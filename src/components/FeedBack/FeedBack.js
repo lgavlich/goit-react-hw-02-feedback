@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import FeedbackOptions from "../FeedbackOptions";
 import s from "./FeedBack.module.css";
-import Statistics from "../Statistics/Statistics";
+import Statistics from "../Statistics";
 import Section from "../Section";
 
-import { FEEDBACK_OPTIONS } from "../Options/Options";
+import { FEEDBACK_OPTIONS } from "../Options/Option";
 
 class FeedBack extends Component {
   state = {
