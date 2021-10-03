@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import FeedbackOptions from "../FeedbackOptions";
+import s from "./FeedBack.module.css";
 import Statistics from "../Statistics/Statistics";
 import Section from "../Section";
 
@@ -38,7 +39,7 @@ class FeedBack extends Component {
     const positivePercentage = this.countPositiveFeedbackPercentage();
 
     return (
-      <div>
+      <div className={s.Container}>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={FEEDBACK_OPTIONS}

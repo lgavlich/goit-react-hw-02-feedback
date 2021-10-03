@@ -1,9 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import s from "./FeedbackOptions.module.css";
 
 const FeedbackOptions = ({ feedback, onGiveFeedback }) => {
   return (
-    <button type="button" dataFeedback={feedback} onClick={onGiveFeedback}>
+    <button
+      type="button"
+      className={s.button}
+      dataFeedback={feedback}
+      onClick={onGiveFeedback}
+    >
       {feedback}
     </button>
   );
@@ -11,7 +17,7 @@ const FeedbackOptions = ({ feedback, onGiveFeedback }) => {
 
 const LeaveFeeddack = ({ options, onGiveFeedback }) => {
   return (
-    <div>
+    <div className={s.btnContainer}>
       {options.map((option) => (
         <FeedbackOptions
           feedback={option}
