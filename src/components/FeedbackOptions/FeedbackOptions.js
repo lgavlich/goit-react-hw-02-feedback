@@ -7,7 +7,7 @@ const FeedbackOptions = ({ feedback, onGiveFeedback }) => {
     <button
       type="button"
       className={s.button}
-      dataFeedback={feedback}
+      data-feedback={feedback}
       onClick={onGiveFeedback}
     >
       {feedback}
