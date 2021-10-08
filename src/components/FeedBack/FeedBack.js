@@ -13,10 +13,8 @@ class FeedBack extends Component {
     bad: 0,
   };
 
-  changeFeedback = (e) => {
-    const { feedback } = e.target.dataset;
+  changeFeedback = (feedback) => {
     this.setState((prevState) => ({ [feedback]: prevState[feedback] + 1 }));
-    console.dir(e.target);
   };
 
   countTotalFeedback = () => {

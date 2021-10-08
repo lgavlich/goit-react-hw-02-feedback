@@ -21,7 +21,7 @@ const LeaveFeeddack = ({ options, onGiveFeedback }) => {
       {options.map((option) => (
         <FeedbackOptions
           feedback={option}
-          onGiveFeedback={onGiveFeedback}
+          onGiveFeedback={() => onGiveFeedback(option)}
           key={option.toString()}
         />
       ))}
